@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2920A045EF713861EC8A2274 /* Pods_CloudMemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED84822FD7BBBA38C9932F03 /* Pods_CloudMemo.framework */; };
 		C60484571DC718FB004E9E9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60484561DC718FB004E9E9E /* AppDelegate.swift */; };
 		C60484591DC718FB004E9E9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60484581DC718FB004E9E9E /* ViewController.swift */; };
 		C604845C1DC718FB004E9E9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C604845A1DC718FB004E9E9E /* Main.storyboard */; };
 		C604845E1DC718FB004E9E9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C604845D1DC718FB004E9E9E /* Assets.xcassets */; };
 		C60484611DC718FB004E9E9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C604845F1DC718FB004E9E9E /* LaunchScreen.storyboard */; };
+		C60484691DC7198D004E9E9E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C60484681DC7198D004E9E9E /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3278344175FE0132986C70B6 /* Pods-CloudMemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudMemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CloudMemo/Pods-CloudMemo.release.xcconfig"; sourceTree = "<group>"; };
 		C60484531DC718FB004E9E9E /* CloudMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C60484561DC718FB004E9E9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C60484581DC718FB004E9E9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,11 @@
 		C604845D1DC718FB004E9E9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C60484601DC718FB004E9E9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C60484621DC718FB004E9E9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C60484681DC7198D004E9E9E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C604846A1DC71AB5004E9E9E /* CloudMemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CloudMemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		C604846D1DC72483004E9E9E /* CloudMemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CloudMemo.entitlements; sourceTree = "<group>"; };
+		D45BFDDFED45336289E9BF4C /* Pods-CloudMemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudMemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CloudMemo/Pods-CloudMemo.debug.xcconfig"; sourceTree = "<group>"; };
+		ED84822FD7BBBA38C9932F03 /* Pods_CloudMemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CloudMemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2920A045EF713861EC8A2274 /* Pods_CloudMemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		109B7F5EA70A17A842474CBE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D45BFDDFED45336289E9BF4C /* Pods-CloudMemo.debug.xcconfig */,
+				3278344175FE0132986C70B6 /* Pods-CloudMemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C604844A1DC718FB004E9E9E = {
 			isa = PBXGroup;
 			children = (
 				C60484551DC718FB004E9E9E /* CloudMemo */,
 				C60484541DC718FB004E9E9E /* Products */,
+				109B7F5EA70A17A842474CBE /* Pods */,
+				F2A7908809A31C9CE2449804 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +74,25 @@
 		C60484551DC718FB004E9E9E /* CloudMemo */ = {
 			isa = PBXGroup;
 			children = (
+				C604846D1DC72483004E9E9E /* CloudMemo.entitlements */,
+				C60484681DC7198D004E9E9E /* GoogleService-Info.plist */,
 				C60484561DC718FB004E9E9E /* AppDelegate.swift */,
 				C60484581DC718FB004E9E9E /* ViewController.swift */,
 				C604845A1DC718FB004E9E9E /* Main.storyboard */,
 				C604845D1DC718FB004E9E9E /* Assets.xcassets */,
 				C604845F1DC718FB004E9E9E /* LaunchScreen.storyboard */,
 				C60484621DC718FB004E9E9E /* Info.plist */,
+				C604846A1DC71AB5004E9E9E /* CloudMemo-Bridging-Header.h */,
 			);
 			path = CloudMemo;
+			sourceTree = "<group>";
+		};
+		F2A7908809A31C9CE2449804 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED84822FD7BBBA38C9932F03 /* Pods_CloudMemo.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +102,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C60484651DC718FB004E9E9E /* Build configuration list for PBXNativeTarget "CloudMemo" */;
 			buildPhases = (
+				9E110A4A3FD10C15F9BFBF87 /* [CP] Check Pods Manifest.lock */,
 				C604844F1DC718FB004E9E9E /* Sources */,
 				C60484501DC718FB004E9E9E /* Frameworks */,
 				C60484511DC718FB004E9E9E /* Resources */,
+				D19574A4D86DFA9591B97B62 /* [CP] Embed Pods Frameworks */,
+				C3ED4876C6802D189E4FFF80 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -97,7 +131,13 @@
 					C60484521DC718FB004E9E9E = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = MFYR8SG4J9;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -125,12 +165,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				C60484611DC718FB004E9E9E /* LaunchScreen.storyboard in Resources */,
+				C60484691DC7198D004E9E9E /* GoogleService-Info.plist in Resources */,
 				C604845E1DC718FB004E9E9E /* Assets.xcassets in Resources */,
 				C604845C1DC718FB004E9E9E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9E110A4A3FD10C15F9BFBF87 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C3ED4876C6802D189E4FFF80 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CloudMemo/Pods-CloudMemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D19574A4D86DFA9591B97B62 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CloudMemo/Pods-CloudMemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C604844F1DC718FB004E9E9E /* Sources */ = {
@@ -259,26 +348,35 @@
 		};
 		C60484661DC718FB004E9E9E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D45BFDDFED45336289E9BF4C /* Pods-CloudMemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = CloudMemo/CloudMemo.entitlements;
 				DEVELOPMENT_TEAM = MFYR8SG4J9;
 				INFOPLIST_FILE = CloudMemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "info.ueda-keisuke.CloudMemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CloudMemo/CloudMemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		C60484671DC718FB004E9E9E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3278344175FE0132986C70B6 /* Pods-CloudMemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = CloudMemo/CloudMemo.entitlements;
 				DEVELOPMENT_TEAM = MFYR8SG4J9;
 				INFOPLIST_FILE = CloudMemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "info.ueda-keisuke.CloudMemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CloudMemo/CloudMemo-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -302,6 +400,7 @@
 				C60484671DC718FB004E9E9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
