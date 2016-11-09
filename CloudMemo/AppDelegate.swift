@@ -64,8 +64,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         
         let authentication = user.authentication
         let credential = FIRGoogleAuthProvider.credential(withIDToken: (authentication?.idToken)!, accessToken: (authentication?.accessToken)!)
-        // ...
         
+        print(authentication?.accessToken!)
+        print(authentication?.accessTokenExpirationDate!)
+        print(authentication?.clientID)
+        print(authentication?.idToken)
+        print(authentication?.description)
+        print(authentication?.debugDescription)
+        print(authentication?.accessToken)
+        print(credential)
+       
         FIRAuth.auth()?.signIn(with: credential) { (user, error) in
             print("Firebaseにサインインしました")
             
